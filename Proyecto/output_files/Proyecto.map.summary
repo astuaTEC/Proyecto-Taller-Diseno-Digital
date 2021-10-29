@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu Oct 28 16:18:27 2021
+Analysis & Elaboration Status : Successful - Thu Oct 28 21:51:17 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Proyecto
-Top-level Entity Name : Register
+Top-level Entity Name : DataMemory
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

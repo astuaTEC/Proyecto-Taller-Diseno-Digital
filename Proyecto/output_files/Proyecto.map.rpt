@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Proyecto
-Thu Oct 28 16:18:27 2021
+Thu Oct 28 21:51:17 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,9 +9,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |Register
-  5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -38,10 +38,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Oct 28 16:18:27 2021       ;
+; Analysis & Elaboration Status ; Successful - Thu Oct 28 21:51:17 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Proyecto                                    ;
-; Top-level Entity Name         ; Register                                    ;
+; Top-level Entity Name         ; DataMemory                                  ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -69,23 +69,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Register ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; N              ; 8     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Register           ; Proyecto           ;
+; Top-level entity name                                                           ; DataMemory         ; Proyecto           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -172,17 +162,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 28 16:18:19 2021
+    Info: Processing started: Thu Oct 28 21:51:10 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto -c Proyecto --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file demux_1_to_16.sv
+    Info (12023): Found entity 1: Demux_1_to_16 File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file register.sv
-    Info (12023): Found entity 1: Register File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv Line: 3
-Info (12127): Elaborating entity "Register" for the top level hierarchy
+    Info (12023): Found entity 1: Register File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2_to_1.sv
+    Info (12023): Found entity 1: Mux_2_to_1 File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_2_to_1.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
+    Info (12023): Found entity 1: InstructionMemory File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/InstructionMemory.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file mux_16_to_1.sv
+    Info (12023): Found entity 1: Mux_16_to_1 File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_16_to_1.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
+    Info (12023): Found entity 1: PC File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file plus4.sv
+    Info (12023): Found entity 1: Plus4 File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file datamemory.sv
+    Info (12023): Found entity 1: DataMemory File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataMemory.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file registerfile.sv
+    Info (12023): Found entity 1: RegisterFile File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv Line: 3
+Info (12127): Elaborating entity "DataMemory" for the top level hierarchy
+Info (144001): Generated suppressed messages file C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/output_files/Proyecto.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4769 megabytes
-    Info: Processing ended: Thu Oct 28 16:18:27 2021
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4757 megabytes
+    Info: Processing ended: Thu Oct 28 21:51:17 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/output_files/Proyecto.map.smsg.
 
 
