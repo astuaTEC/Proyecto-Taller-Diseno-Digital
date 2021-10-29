@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Proyecto
-Thu Oct 28 21:51:17 2021
+Thu Oct 28 22:00:04 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,10 +38,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Oct 28 21:51:17 2021       ;
+; Analysis & Elaboration Status ; Successful - Thu Oct 28 22:00:04 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Proyecto                                    ;
-; Top-level Entity Name         ; DataMemory                                  ;
+; Top-level Entity Name         ; ALU                                         ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -75,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; DataMemory         ; Proyecto           ;
+; Top-level entity name                                                           ; ALU                ; Proyecto           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 28 21:51:10 2021
+    Info: Processing started: Thu Oct 28 21:59:56 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto -c Proyecto --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -184,12 +184,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file datamem
     Info (12023): Found entity 1: DataMemory File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataMemory.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file registerfile.sv
     Info (12023): Found entity 1: RegisterFile File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv Line: 3
-Info (12127): Elaborating entity "DataMemory" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(27): created implicit net for "o1" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(28): created implicit net for "o2" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(29): created implicit net for "o3" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 29
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Info (144001): Generated suppressed messages file C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/output_files/Proyecto.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Thu Oct 28 21:51:17 2021
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Thu Oct 28 22:00:04 2021
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 
 
