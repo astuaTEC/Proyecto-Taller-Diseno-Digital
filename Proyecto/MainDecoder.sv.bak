@@ -1,0 +1,10 @@
+
+module MainDecoder(input  logic[1:0] Op,
+						 input  logic Funct5, Funct0,
+						 input  logic [3:0] Cmd,
+						 output logic Branch, RegW, MemW, MemtoReg, ALUSrc, ALUOp,
+						 output logic [1:0] ImmSrc, 
+						 output logic [2:0] RegSrc);
+						 
+						 
+endmodule 
