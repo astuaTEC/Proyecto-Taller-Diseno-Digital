@@ -1,4 +1,135 @@
-|ConditionalLogic
+|ControlUnit_tb
+
+
+|ControlUnit_tb|ControlUnit:CU
+clk => clk.IN1
+rst => rst.IN1
+Rd[0] => Rd[0].IN1
+Rd[1] => Rd[1].IN1
+Rd[2] => Rd[2].IN1
+Rd[3] => Rd[3].IN1
+Op[0] => Op[0].IN1
+Op[1] => Op[1].IN1
+Funct[0] => Funct[0].IN1
+Funct[1] => Funct[1].IN1
+Funct[2] => Funct[2].IN1
+Funct[3] => Funct[3].IN1
+Funct[4] => Funct[4].IN1
+Funct[5] => Funct[5].IN1
+Cond[0] => Cond[0].IN1
+Cond[1] => Cond[1].IN1
+Cond[2] => Cond[2].IN1
+Cond[3] => Cond[3].IN1
+ALUFlags[0] => ALUFlags[0].IN1
+ALUFlags[1] => ALUFlags[1].IN1
+ALUFlags[2] => ALUFlags[2].IN1
+ALUFlags[3] => ALUFlags[3].IN1
+MemtoReg <= Decoder:CUDecoder.port6
+ALUSrc <= Decoder:CUDecoder.port7
+MemWrite <= ConditionalLogic:CLogic.port11
+RegWrite <= ConditionalLogic:CLogic.port10
+PCSrc <= ConditionalLogic:CLogic.port9
+ImmSrc[0] <= Decoder:CUDecoder.port9
+ImmSrc[1] <= Decoder:CUDecoder.port9
+RegSrc[0] <= Decoder:CUDecoder.port11
+RegSrc[1] <= Decoder:CUDecoder.port11
+ALUControl[0] <= Decoder:CUDecoder.port12
+ALUControl[1] <= Decoder:CUDecoder.port12
+
+
+|ControlUnit_tb|ControlUnit:CU|Decoder:CUDecoder
+Rd[0] => Rd[0].IN1
+Rd[1] => Rd[1].IN1
+Rd[2] => Rd[2].IN1
+Rd[3] => Rd[3].IN1
+Op[0] => Op[0].IN1
+Op[1] => Op[1].IN1
+Funct[0] => Funct[0].IN2
+Funct[1] => Funct[1].IN1
+Funct[2] => Funct[2].IN1
+Funct[3] => Funct[3].IN1
+Funct[4] => Funct[4].IN1
+Funct[5] => Funct[5].IN1
+PCS <= PC_Logic:PcLogic.port3
+RegW <= RegW.DB_MAX_OUTPUT_PORT_TYPE
+MemW <= MainDecoder:MainDeco.port5
+MemtoReg <= MainDecoder:MainDeco.port6
+ALUSrc <= MainDecoder:MainDeco.port7
+NoWrite <= ALUDecoder:ALUDeco.port2
+ImmSrc[0] <= MainDecoder:MainDeco.port9
+ImmSrc[1] <= MainDecoder:MainDeco.port9
+FlagW[0] <= ALUDecoder:ALUDeco.port4
+FlagW[1] <= ALUDecoder:ALUDeco.port4
+RegSrc[0] <= MainDecoder:MainDeco.port10
+RegSrc[1] <= MainDecoder:MainDeco.port10
+ALUControl[0] <= ALUDecoder:ALUDeco.port3
+ALUControl[1] <= ALUDecoder:ALUDeco.port3
+
+
+|ControlUnit_tb|ControlUnit:CU|Decoder:CUDecoder|MainDecoder:MainDeco
+Op[0] => controls.OUTPUTSELECT
+Op[0] => Mux0.IN4
+Op[0] => Mux1.IN4
+Op[0] => Mux2.IN5
+Op[0] => MemtoReg.DATAIN
+Op[0] => ImmSrc[0].DATAIN
+Op[0] => RegSrc[1].DATAIN
+Op[1] => Mux0.IN3
+Op[1] => Mux1.IN3
+Op[1] => Mux2.IN4
+Op[1] => Branch.DATAIN
+Op[1] => ImmSrc[1].DATAIN
+Op[1] => RegSrc[0].DATAIN
+Funct5 => Mux0.IN5
+Funct0 => Mux1.IN5
+Funct0 => controls.DATAB
+Branch <= Op[1].DB_MAX_OUTPUT_PORT_TYPE
+RegW <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+MemW <= controls.DB_MAX_OUTPUT_PORT_TYPE
+MemtoReg <= Op[0].DB_MAX_OUTPUT_PORT_TYPE
+ALUSrc <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+ALUOp <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+ImmSrc[0] <= Op[0].DB_MAX_OUTPUT_PORT_TYPE
+ImmSrc[1] <= Op[1].DB_MAX_OUTPUT_PORT_TYPE
+RegSrc[0] <= Op[1].DB_MAX_OUTPUT_PORT_TYPE
+RegSrc[1] <= Op[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ControlUnit_tb|ControlUnit:CU|Decoder:CUDecoder|ALUDecoder:ALUDeco
+ALUOp => ALUControl.OUTPUTSELECT
+ALUOp => ALUControl.OUTPUTSELECT
+ALUOp => FlagW.OUTPUTSELECT
+ALUOp => FlagW.OUTPUTSELECT
+ALUOp => NoWrite.OUTPUTSELECT
+Funct[0] => FlagW.IN1
+Funct[0] => FlagW.DATAB
+Funct[1] => Equal2.IN3
+Funct[2] => Mux0.IN10
+Funct[2] => Decoder0.IN1
+Funct[2] => Equal2.IN1
+Funct[3] => Mux0.IN9
+Funct[3] => Equal2.IN2
+Funct[4] => Mux0.IN8
+Funct[4] => Decoder0.IN0
+Funct[4] => Equal2.IN0
+NoWrite <= NoWrite.DB_MAX_OUTPUT_PORT_TYPE
+ALUControl[0] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
+ALUControl[1] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
+FlagW[0] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
+FlagW[1] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ControlUnit_tb|ControlUnit:CU|Decoder:CUDecoder|PC_Logic:PcLogic
+Rd[0] => Equal0.IN3
+Rd[1] => Equal0.IN2
+Rd[2] => Equal0.IN1
+Rd[3] => Equal0.IN0
+Branch => PCS.IN1
+RegW => PCS.IN1
+PCS <= PCS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ControlUnit_tb|ControlUnit:CU|ConditionalLogic:CLogic
 clk => clk.IN2
 rst => rst.IN2
 PCS => PCSrc.IN1
@@ -20,7 +151,7 @@ RegWrite <= RegWrite.DB_MAX_OUTPUT_PORT_TYPE
 MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ConditionalLogic|Register:R1
+|ControlUnit_tb|ControlUnit:CU|ConditionalLogic:CLogic|Register:R1
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 rst => Q[0]~reg0.ACLR
@@ -33,7 +164,7 @@ Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ConditionalLogic|Register:R2
+|ControlUnit_tb|ControlUnit:CU|ConditionalLogic:CLogic|Register:R2
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 rst => Q[0]~reg0.ACLR

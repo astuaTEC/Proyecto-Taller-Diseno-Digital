@@ -1,0 +1,227 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/simulation/modelsim
+vALUDecoder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1636243904
+!i10b 1
+!s100 RRoCgo8@62Be>kQVJ4?BW1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<A@JiAzHd1I[dzz[5`bi_3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1635958952
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv
+!i122 3
+L0 3 34
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1636243903.000000
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto
+Z9 tCvgOpt 0
+n@a@l@u@decoder
+vConditionalLogic
+R1
+R2
+!i10b 1
+!s100 0]m34THAU@Kd6;zJV]MMX0
+R3
+IaWZ<glWn=]8H4^>RdFTG:0
+R4
+S1
+R0
+w1635960620
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ConditionalLogic.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ConditionalLogic.sv
+!i122 4
+L0 3 42
+R5
+r1
+!s85 0
+31
+Z10 !s108 1636243904.000000
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ConditionalLogic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ConditionalLogic.sv|
+!i113 1
+R7
+R8
+R9
+n@conditional@logic
+vControlUnit
+R1
+R2
+!i10b 1
+!s100 edZ9j4ngmJRafa@o;EeSh1
+R3
+ICMK5^EnFcLafAKoOcIX<Q0
+R4
+S1
+R0
+w1636241253
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv
+!i122 6
+L0 6 19
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv|
+!i113 1
+R7
+R8
+R9
+n@control@unit
+vControlUnit_tb
+R1
+R2
+!i10b 1
+!s100 geKg1jkSYW<L:=_SJaH322
+R3
+I<MdLLBQaPIKcJQWRJD8m71
+R4
+S1
+R0
+w1636243410
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit_tb.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit_tb.sv
+!i122 7
+L0 3 69
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit_tb.sv|
+!i113 1
+R7
+R8
+R9
+n@control@unit_tb
+vDecoder
+R1
+R2
+!i10b 1
+!s100 []@E=OF5G9H02W:TB;U:_2
+R3
+IEajPmLA=UlPLg;808=Km72
+R4
+S1
+R0
+w1636240321
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv
+!i122 5
+L0 6 17
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv|
+!i113 1
+R7
+R8
+R9
+n@decoder
+vMainDecoder
+R1
+Z11 !s110 1636243903
+!i10b 1
+!s100 P=1ngR8FC>_a7^`G_9ba90
+R3
+IhRTKCb?^76ET0=C0oam4d0
+R4
+S1
+R0
+w1635956434
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv
+!i122 1
+L0 7 41
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv|
+!i113 1
+R7
+R8
+R9
+n@main@decoder
+vPC_Logic
+R1
+R11
+!i10b 1
+!s100 4NXoEa:SO8=FLh`j^HTa52
+R3
+IO>NgNiG1^5]ag96a[nf^d0
+R4
+S1
+R0
+w1635956555
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC_Logic.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC_Logic.sv
+!i122 2
+L0 6 7
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC_Logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC_Logic.sv|
+!i113 1
+R7
+R8
+R9
+n@p@c_@logic
+vRegister
+R1
+R11
+!i10b 1
+!s100 03_GA]alM`2]L0nQK=Pch0
+R3
+I;LOJl?UVYJ:R8g7zW=kaO2
+R4
+S1
+R0
+w1635478165
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv
+!i122 0
+L0 6 10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv|
+!i113 1
+R7
+R8
+R9
+n@register
