@@ -1,0 +1,10 @@
+
+
+module Alu_tb();
+
+	logic [31:0] a, b;
+	
+	ALU alu(a, b, input [3:0] ctrl, output [31:0] res, output [3:0] flags);
+
+
+endmodule 

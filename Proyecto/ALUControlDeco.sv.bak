@@ -1,0 +1,7 @@
+
+
+module ALUControlDeco (input logic ALUControl,
+							  output logic ALUOp);
+							  
+							  
+endmodule 
