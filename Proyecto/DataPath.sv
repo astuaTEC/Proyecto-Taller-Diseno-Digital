@@ -46,5 +46,6 @@ module DataPath (input logic clk, rst, MemtoReg, ALUSrc, MemWrite, RegWrite, PCS
 	//Se le extiende el signo a la salida de PCPlus8 para
 	// que se adapte al registro de 32 bits
 	assign PCPlus8E = {{16{PCPlus8[15]}}, PCPlus8};
+	assign WriteData = RD2;
 	
 endmodule 

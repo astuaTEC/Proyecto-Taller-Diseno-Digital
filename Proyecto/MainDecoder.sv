@@ -31,7 +31,7 @@ module MainDecoder(input  logic[1:0] Op,
 			2'b10:	controls = 10'b1001100X10;
 			
   	            // Unimplemented
-			default:	controls = 11'bx;          
+			default:	controls = 10'bx;          
   	endcase
 
 	assign Branch = controls[9];
