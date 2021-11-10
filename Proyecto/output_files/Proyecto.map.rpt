@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Proyecto
-Tue Nov 09 10:34:35 2021
+Tue Nov 09 19:07:10 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,10 +9,41 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "ALU:alu"
-  6. Analysis & Elaboration Messages
-  7. Analysis & Elaboration Suppressed Messages
+  4. Parameter Settings for User Entity Instance: Mux_2_to_1:PCSrcMux
+  5. Parameter Settings for User Entity Instance: PC:PCReg
+  6. Parameter Settings for User Entity Instance: Plus4:PCAdder1
+  7. Parameter Settings for User Entity Instance: Plus4:PCAdder2
+  8. Parameter Settings for User Entity Instance: Mux_2_to_1:ra1mux
+  9. Parameter Settings for User Entity Instance: Mux_2_to_1:ra2mux
+ 10. Parameter Settings for User Entity Instance: RegisterFile:RegFile
+ 11. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Demux_1_to_16:DEMUX
+ 12. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG00
+ 13. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG01
+ 14. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG02
+ 15. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG03
+ 16. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG04
+ 17. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG05
+ 18. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG06
+ 19. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG07
+ 20. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG08
+ 21. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG09
+ 22. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG10
+ 23. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG11
+ 24. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG12
+ 25. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG13
+ 26. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG14
+ 27. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG15
+ 28. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Mux_16_to_1:MUX_RD1
+ 29. Parameter Settings for User Entity Instance: RegisterFile:RegFile|Mux_16_to_1:MUX_RD2
+ 30. Parameter Settings for User Entity Instance: Mux_2_to_1:SrcBMux
+ 31. Parameter Settings for User Entity Instance: Mux_2_to_1:MemtoRegMux
+ 32. Analysis & Elaboration Settings
+ 33. Port Connectivity Checks: "RegisterFile:RegFile|Register:REG15"
+ 34. Port Connectivity Checks: "RegisterFile:RegFile|Demux_1_to_16:DEMUX"
+ 35. Port Connectivity Checks: "Mux_2_to_1:ra1mux"
+ 36. Port Connectivity Checks: "Mux_2_to_1:PCSrcMux"
+ 37. Analysis & Elaboration Messages
+ 38. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -39,10 +70,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Nov 09 10:34:35 2021       ;
+; Analysis & Elaboration Status ; Successful - Tue Nov 09 19:07:10 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Proyecto                                    ;
-; Top-level Entity Name         ; Alu_tb                                      ;
+; Top-level Entity Name         ; DataPath                                    ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -70,13 +101,293 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux_2_to_1:PCSrcMux ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; N              ; 16    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PC:PCReg ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; N              ; 16    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Plus4:PCAdder1 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 16    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Plus4:PCAdder2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 16    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux_2_to_1:ra1mux ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux_2_to_1:ra2mux ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; N              ; 32    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Demux_1_to_16:DEMUX ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG00 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG01 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG02 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG03 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG04 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG05 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG06 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG07 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG08 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG09 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG10 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG11 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG12 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG13 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG14 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Register:REG15 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Mux_16_to_1:MUX_RD1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegisterFile:RegFile|Mux_16_to_1:MUX_RD2 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux_2_to_1:SrcBMux ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 32    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux_2_to_1:MemtoRegMux ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Alu_tb             ; Proyecto           ;
+; Top-level entity name                                                           ; DataPath           ; Proyecto           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -157,14 +468,41 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu"                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; res   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; flags ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "RegisterFile:RegFile|Register:REG15" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                          ;
++------+-------+----------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RegisterFile:RegFile|Demux_1_to_16:DEMUX"                                                                                     ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                    ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; OUT     ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "OUT[31..16]" have no fanouts ;
+; OUT[31] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "Mux_2_to_1:ra1mux" ;
++------+-------+----------+---------------------+
+; Port ; Type  ; Severity ; Details             ;
++------+-------+----------+---------------------+
+; B    ; Input ; Info     ; Stuck at VCC        ;
++------+-------+----------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Mux_2_to_1:PCSrcMux"                                                                                                                                                               ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; B    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -173,18 +511,18 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 09 10:34:19 2021
+    Info: Processing started: Tue Nov 09 19:07:03 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto -c Proyecto --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
+    Info (12023): Found entity 1: Extend File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file demux_1_to_16.sv
     Info (12023): Found entity 1: Demux_1_to_16 File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file register.sv
     Info (12023): Found entity 1: Register File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2_to_1.sv
     Info (12023): Found entity 1: Mux_2_to_1 File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_2_to_1.sv Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
-    Info (12023): Found entity 1: InstructionMemory File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/InstructionMemory.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file mux_16_to_1.sv
     Info (12023): Found entity 1: Mux_16_to_1 File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_16_to_1.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
@@ -215,17 +553,37 @@ Info (12021): Found 1 design units, including 1 entities, in source file alucont
     Info (12023): Found entity 1: ALUControlDeco File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
     Info (12023): Found entity 1: Alu_tb File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Alu_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
+    Info (12023): Found entity 1: DataPath File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
+    Info (12023): Found entity 1: InstructionMemory File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/InstructionMemory.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file datamemoryram.v
+    Info (12023): Found entity 1: DataMemoryRam File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataMemoryRam.v Line: 40
 Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(27): created implicit net for "o1" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 27
 Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(28): created implicit net for "o2" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 28
 Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(29): created implicit net for "o3" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 29
-Info (12127): Elaborating entity "Alu_tb" for the top level hierarchy
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Alu_tb.sv Line: 8
+Info (12127): Elaborating entity "DataPath" for the top level hierarchy
+Warning (10034): Output port "WriteData" at DataPath.sv(7) has no driver File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 7
+Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "Mux_2_to_1:PCSrcMux" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 18
+Info (12128): Elaborating entity "PC" for hierarchy "PC:PCReg" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 19
+Info (12128): Elaborating entity "Plus4" for hierarchy "Plus4:PCAdder1" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at Plus4.sv(9): truncated value with size 32 to match size of target (16) File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv Line: 9
+Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "Mux_2_to_1:ra1mux" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 27
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RegFile" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 31
+Info (12128): Elaborating entity "Demux_1_to_16" for hierarchy "RegisterFile:RegFile|Demux_1_to_16:DEMUX" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv Line: 19
+Info (12128): Elaborating entity "Register" for hierarchy "RegisterFile:RegFile|Register:REG00" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv Line: 23
+Info (12128): Elaborating entity "Mux_16_to_1" for hierarchy "RegisterFile:RegFile|Mux_16_to_1:MUX_RD1" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv Line: 44
+Info (12128): Elaborating entity "Extend" for hierarchy "Extend:Ext" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 34
+Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "Mux_2_to_1:SrcBMux" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 37
+Info (12128): Elaborating entity "ALUControlDeco" for hierarchy "ALUControlDeco:AluDeco" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 40
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:Alu" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv Line: 41
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/output_files/Proyecto.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Tue Nov 09 10:34:35 2021
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:41
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4768 megabytes
+    Info: Processing ended: Tue Nov 09 19:07:10 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +--------------------------------------------+

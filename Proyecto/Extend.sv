@@ -1,9 +1,9 @@
 module Extend(input  [23:0] x,
-                input  [1:0]  ImmSrc,
-                output reg [31:0] ExtImm);
+              input  [1:0]  ImmSrc,
+              output reg [31:0] ExtImm);
  
 always @(*)
-    case(src) 
+    case(ImmSrc) 
                  // 8-bit unsigned immediate
         2'b00:   ExtImm = {24'b0, x[7:0]};  
                  // 12-bit unsigned immediate 
