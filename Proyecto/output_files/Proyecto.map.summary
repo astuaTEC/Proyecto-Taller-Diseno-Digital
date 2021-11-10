@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Tue Nov 09 19:07:10 2021
+Analysis & Elaboration Status : Successful - Tue Nov 09 20:32:58 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Proyecto
-Top-level Entity Name : DataPath
+Top-level Entity Name : Processor
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
