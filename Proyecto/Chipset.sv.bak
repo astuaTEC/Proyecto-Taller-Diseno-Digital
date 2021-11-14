@@ -1,0 +1,20 @@
+
+
+module Chipset(input logic MW, input logic [31:0] Addr,
+					output logic writeRam, S);
+					
+	always @(*) begin
+	
+		case (MW) begin
+			1'b0: begin
+				writeRam = 1'b0;
+				S = 0;
+			end
+			1'b1: begin
+				writeRam = 1'b1;
+				S = 1;
+			end
+		end
+	end
+					
+endmodule  

@@ -15,7 +15,7 @@ module DataPath (input logic clk, rst, MemtoReg, ALUSrc, MemWrite, RegWrite, PCS
 	logic [15:0] PCPlus4, PC1, PCPlus8;
 	
 	//Parte relacionada al PC
-	Mux_2_to_1 #(16) PCSrcMux(PCSrc, PCPlus4, Result, PC1);
+	Mux_2_to_1 #(16) PCSrcMux(PCSrc, PCPlus4, Result[15:0], PC1);
 	PC #(16) PCReg(clk, rst, PC1, PC);
 	
 	//Dos sumadores de +4

@@ -10,40 +10,274 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/InstructionMemory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:17 on Nov 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/InstructionMemory.v 
+# -- Compiling module InstructionMemory
+# 
+# Top level modules:
+# 	InstructionMemory
+# End time: 18:49:17 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataMemoryRam.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:18 on Nov 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataMemoryRam.v 
+# -- Compiling module DataMemoryRam
+# 
+# Top level modules:
+# 	DataMemoryRam
+# End time: 18:49:18 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:18 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Extend.sv 
+# -- Compiling module Extend
+# 
+# Top level modules:
+# 	Extend
+# End time: 18:49:18 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:18 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv 
+# -- Compiling module Demux_1_to_16
+# 
+# Top level modules:
+# 	Demux_1_to_16
+# End time: 18:49:18 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:18 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv 
+# -- Compiling module Register
+# 
+# Top level modules:
+# 	Register
+# End time: 18:49:18 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_2_to_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:18 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_2_to_1.sv 
+# -- Compiling module Mux_2_to_1
+# 
+# Top level modules:
+# 	Mux_2_to_1
+# End time: 18:49:18 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_16_to_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:18 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_16_to_1.sv 
+# -- Compiling module Mux_16_to_1
+# 
+# Top level modules:
+# 	Mux_16_to_1
+# End time: 18:49:18 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:18 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC.sv 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 18:49:18 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:18 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv 
+# -- Compiling module Plus4
+# 
+# Top level modules:
+# 	Plus4
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:35:28 on Nov 09,2021
+# Start time: 18:49:19 on Nov 13,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 10:35:28 on Nov 09,2021, Elapsed time: 0:00:00
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Alu_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:35:28 on Nov 09,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Alu_tb.sv 
-# -- Compiling module Alu_tb
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv 
+# -- Compiling module MainDecoder
 # 
 # Top level modules:
-# 	Alu_tb
-# End time: 10:35:29 on Nov 09,2021, Elapsed time: 0:00:01
+# 	MainDecoder
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC_Logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC_Logic.sv 
+# -- Compiling module PC_Logic
+# 
+# Top level modules:
+# 	PC_Logic
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv 
+# -- Compiling module ALUDecoder
+# 
+# Top level modules:
+# 	ALUDecoder
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ConditionalLogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ConditionalLogic.sv 
+# -- Compiling module ConditionalLogic
+# 
+# Top level modules:
+# 	ConditionalLogic
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv 
+# -- Compiling module Decoder
+# 
+# Top level modules:
+# 	Decoder
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv 
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv 
+# -- Compiling module ALUControlDeco
+# 
+# Top level modules:
+# 	ALUControlDeco
+# End time: 18:49:19 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv 
+# -- Compiling module DataPath
+# 
+# Top level modules:
+# 	DataPath
+# End time: 18:49:20 on Nov 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/CPU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:20 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/CPU.sv 
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# End time: 18:49:20 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Processor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:20 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Processor.sv 
+# -- Compiling module Processor
+# 
+# Top level modules:
+# 	Processor
+# End time: 18:49:20 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/writeMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:20 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/writeMem.sv 
+# -- Compiling module writeMem
+# 
+# Top level modules:
+# 	writeMem
+# End time: 18:49:20 on Nov 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/processor_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:20 on Nov 13,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto" C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/processor_tb.sv 
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:49:20 on Nov 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.Alu_tb
-# vsim work.Alu_tb 
-# Start time: 10:35:45 on Nov 09,2021
+vsim -gui -l msim_transcript rtl_work.processor_tb -L altera_mf_ver
+# vsim -gui -l msim_transcript rtl_work.processor_tb -L altera_mf_ver 
+# Start time: 18:49:51 on Nov 13,2021
 # Loading sv_std.std
-# Loading work.Alu_tb
-# Loading work.ALU
-add wave  \
-sim:/Alu_tb/res \
-sim:/Alu_tb/flags \
-sim:/Alu_tb/ctrl \
-sim:/Alu_tb/b \
-sim:/Alu_tb/a
+# Loading rtl_work.processor_tb
+# Loading rtl_work.Processor
+# Loading rtl_work.InstructionMemory
+# Loading altera_mf_ver.altsyncram
+# Loading rtl_work.DataMemoryRam
+# Loading rtl_work.CPU
+# Loading rtl_work.ControlUnit
+# Loading rtl_work.Decoder
+# Loading rtl_work.MainDecoder
+# Loading rtl_work.ALUDecoder
+# Loading rtl_work.PC_Logic
+# Loading rtl_work.ConditionalLogic
+# Loading rtl_work.Register
+# Loading rtl_work.DataPath
+# Loading rtl_work.Mux_2_to_1
+# Loading rtl_work.PC
+# Loading rtl_work.Plus4
+# Loading rtl_work.RegisterFile
+# Loading rtl_work.Demux_1_to_16
+# Loading rtl_work.Mux_16_to_1
+# Loading rtl_work.Extend
+# Loading rtl_work.ALUControlDeco
+# Loading rtl_work.ALU
+# Loading rtl_work.writeMem
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+add wave sim:/processor_tb/*
 run
 run
-# End time: 10:38:10 on Nov 09,2021, Elapsed time: 0:02:25
+run
+run
+run
+run
+# End time: 18:54:47 on Nov 13,2021, Elapsed time: 0:04:56
 # Errors: 0, Warnings: 0

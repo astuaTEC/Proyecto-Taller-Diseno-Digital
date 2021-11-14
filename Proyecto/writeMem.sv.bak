@@ -1,0 +1,13 @@
+
+
+module writeMem(input logic [7:0] bytePos, input logic [2:0] btn,
+					 output enable,
+					 output logic [15:0] addr,
+					 output [7:0] data);
+	
+	always @(btn) begin
+		case(btn)
+			
+		endcase
+					 
+endmodule 

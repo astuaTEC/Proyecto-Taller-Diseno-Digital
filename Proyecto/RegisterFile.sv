@@ -16,7 +16,7 @@ module RegisterFile #(N = 32) (input  logic clk, rst, WE3,
 	// entonces se utiliza un Demux para saber en cual
 	// registro se desea escribir
 	logic[15:0] reg_en;
-	Demux_1_to_16 #(N) DEMUX(WE3, A3, reg_en);
+	Demux_1_to_16 #(16) DEMUX(WE3, A3, reg_en);
 
 
 	// Registros									  
