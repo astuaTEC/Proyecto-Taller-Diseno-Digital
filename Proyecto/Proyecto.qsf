@@ -79,6 +79,7 @@ set_global_assignment -name SYSTEMVERILOG_FILE Processor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE writeMem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Chipset.sv
 set_global_assignment -name SYSTEMVERILOG_FILE processor_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE romtb.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

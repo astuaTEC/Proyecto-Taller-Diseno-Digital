@@ -1,0 +1,25 @@
+`timescale 1 ns / 1 ns
+module romtb();
+
+
+logic [15:0] Addr;
+logic [31:0] q;
+
+InstructionMemory Rom(Addr, clk, q);
+
+initial begin
+
+Addr = 6'd0;
+#10;
+Addr = 6'd1;
+#10;
+Addr = 6'd2;
+#10;
+Addr = 6'd126;
+#10;
+
+
+
+end
+
+endmodule 

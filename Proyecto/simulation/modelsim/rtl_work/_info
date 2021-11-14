@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1636850959
+Z2 !s110 1636856203
 !i10b 1
 !s100 olK@8G53^i2a73^7AJGC[3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1636850959.000000
+Z6 !s108 1636856203.000000
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv|
 !i113 1
@@ -38,7 +38,7 @@ Z9 tCvgOpt 0
 n@a@l@u
 vALUControlDeco
 R1
-R2
+Z10 !s110 1636856204
 !i10b 1
 !s100 CL[HAzkSF_a[jcCU_jz^C0
 R3
@@ -55,7 +55,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1636856204.000000
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv|
 !i113 1
@@ -119,7 +119,7 @@ R9
 n@conditional@logic
 vControlUnit
 R1
-R2
+R10
 !i10b 1
 !s100 edZ9j4ngmJRafa@o;EeSh1
 R3
@@ -136,7 +136,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv|
 !i113 1
@@ -146,7 +146,7 @@ R9
 n@control@unit
 vCPU
 R1
-Z10 !s110 1636850960
+R10
 !i10b 1
 !s100 zC_SMA;W:<^UIY5BGhPMJ2
 R3
@@ -163,7 +163,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1636850960.000000
+R11
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/CPU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/CPU.sv|
 !i113 1
@@ -172,7 +172,7 @@ R8
 R9
 n@c@p@u
 vDataMemoryRam
-Z12 !s110 1636850958
+Z12 !s110 1636856202
 !i10b 1
 !s100 WA77EoD^jiA4>Sk0hG24:3
 R3
@@ -188,7 +188,7 @@ R5
 r1
 !s85 0
 31
-Z13 !s108 1636850958.000000
+Z13 !s108 1636856202.000000
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataMemoryRam.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataMemoryRam.v|
 !i113 1
@@ -215,7 +215,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv|
 !i113 1
@@ -305,7 +305,7 @@ R8
 R9
 n@extend
 vInstructionMemory
-!s110 1636850957
+R12
 !i10b 1
 !s100 WcDi3AkU<_f7Rh8Gia>4H2
 R3
@@ -321,7 +321,7 @@ R5
 r1
 !s85 0
 31
-!s108 1636850957.000000
+R13
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/InstructionMemory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/InstructionMemory.v|
 !i113 1
@@ -412,7 +412,7 @@ R9
 n@mux_2_to_1
 vPC
 R1
-R12
+R2
 !i10b 1
 !s100 ]3W=fkb]1BRi1k6Q=d2HN0
 R3
@@ -483,7 +483,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv|
 !i113 1
@@ -522,13 +522,13 @@ vprocessor_tb
 R1
 R10
 !i10b 1
-!s100 @aZPKH:]F;>0K@64^]80M2
+!s100 Nzl@eOjzo_:IJJo_5e?k40
 R3
-IIzEeIlI^fg^WlLZY<jmSg0
+Ih8hQSPXl:jl<VAZcT4bF21
 R4
 S1
 R0
-w1636850937
+w1636856181
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/processor_tb.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/processor_tb.sv
 !i122 22

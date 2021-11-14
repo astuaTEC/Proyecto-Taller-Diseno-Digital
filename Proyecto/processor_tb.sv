@@ -16,9 +16,9 @@ module processor_tb();
   
   initial begin
 		rst = 1;
-		bytePos = 0;
-		btn = 0;
-		#5
+		//bytePos = 0;
+		//btn = 0;
+		#3
 		
 		rst = 0;
 		bytePos = 50;
