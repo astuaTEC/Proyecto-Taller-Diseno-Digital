@@ -1,5 +1,5 @@
 Warning (10273): Verilog HDL warning at Extend.sv(13): extended using "x" or "z" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Extend.sv Line: 13
 Info (10281): Verilog HDL Declaration information at Demux_1_to_16.sv(4): object "OUT" differs only in case from object "out" in the same scope File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv Line: 4
 Warning (10273): Verilog HDL warning at MainDecoder.sv(34): extended using "x" or "z" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv Line: 34
-Warning (10273): Verilog HDL warning at ALUDecoder.sv(16): extended using "x" or "z" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv Line: 16
-Warning (10273): Verilog HDL warning at ALUDecoder.sv(18): extended using "x" or "z" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv Line: 18
+Warning (10273): Verilog HDL warning at ALUDecoder.sv(17): extended using "x" or "z" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv Line: 17
+Warning (10273): Verilog HDL warning at ALUDecoder.sv(19): extended using "x" or "z" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv Line: 19

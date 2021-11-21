@@ -2,7 +2,6 @@
 /*
     0000 add A + B       Addition
     0010 sub A - B       Subtraction
-	 0001 res = B			 MOV
     0100 and A and B     Logical and 
     0101 or  A or  B     Logical or
     0110 xor A xor B     Exclusive or 
@@ -12,10 +11,10 @@
 // Referencia: https://github.com/liaukovv/single_cycle/blob/master/datapath/alu.v
 
 module ALU(
-    input logic [31:0] a, b,
-    input logic [3:0] ctrl,
-    output logic [31:0] res,
-    output logic [3:0] flags // 3=negative, 2=zero, 1=carry, 0=overflow
+    input [31:0] a, b,
+    input [3:0] ctrl,
+    output [31:0] res,
+    output [3:0] flags // 3=negative, 2=zero, 1=carry, 0=overflow
 );
 
 	wire [31:0] ares, lres;
@@ -42,9 +41,7 @@ module ALU(
 	//arithmetic result
 	assign sb = ctrl[1] ? ~b : b;
 	assign {cout, sumres} = a + sb + ctrl[1];
-	assign ares = ctrl[3] ? {31'b0, sumres[31]} : 
-					  (ctrl[2:0] == 3'b001) ? b:
-						sumres;
+	assign ares = ctrl[3] ? {31'b0, sumres[31]} : sumres;
 
 	//logical result
 	assign lres = (ctrl[2:0] == 3'b100) ? a & b    :
