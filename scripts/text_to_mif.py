@@ -1,4 +1,4 @@
-WIDTH = 32
+WIDTH = 8
 DEPTH = 1024
 
 # Esta función transforma un string de caracteres ASCII a un archivo .mif donde cada dirección tiene un caracter
