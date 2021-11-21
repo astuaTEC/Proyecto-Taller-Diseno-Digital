@@ -11,7 +11,7 @@ module processor_tb();
 	
 	// generate clock to sequence tests
   always begin
-      clk = 1; # 5; clk = 0; # 5;
+      clk = 0; # 5; clk = 1; # 5;
   end
   
   initial begin
@@ -21,7 +21,7 @@ module processor_tb();
 		#3
 		
 		rst = 0;
-		bytePos = 50;
+		/*bytePos = 50;
 		btn = 3'b100;
 		#10
 		
@@ -35,7 +35,7 @@ module processor_tb();
 		btn = 2;
 		#10
 		
-		btn = 0;
+		btn = 0;*/
 			
   end
 

@@ -8,7 +8,8 @@ module CPU(input  logic clk, rst,
 			  
 	logic PCSrc, MemtoReg, ALUSrc, RegWrite;
 	logic [3:0] ALUFlags;
-	logic [1:0] ImmSrc, RegSrc, ALUControl;
+	logic [1:0] ImmSrc, RegSrc;
+	logic [2:0] ALUControl;
 
 	ControlUnit CU(clk, rst, Instr[15:12], Instr[27:26], Instr[25:20], Instr[31:28], ALUFlags, MemtoReg,
 						ALUSrc, MemWrite, RegWrite, PCSrc,

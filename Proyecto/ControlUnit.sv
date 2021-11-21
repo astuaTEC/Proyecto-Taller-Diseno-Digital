@@ -9,7 +9,8 @@ module ControlUnit(input logic clk, rst,
 						 input logic [5:0] Funct,
 						 input logic [3:0] Cond, ALUFlags,
 						 output logic MemtoReg, ALUSrc, MemWrite, RegWrite, PCSrc,
-						 output logic [1:0] ImmSrc, RegSrc, ALUControl);
+						 output logic [1:0] ImmSrc, RegSrc,
+						 output logic [2:0] ALUControl);
 
 	logic [1:0] FlagW;
 	logic PCS, RegW, MemW, NoWrite;

@@ -1,7 +1,8 @@
 
 
 module DataPath (input logic clk, rst, MemtoReg, ALUSrc, MemWrite, RegWrite, PCSrc,
-					  input logic [1:0] ImmSrc, RegSrc, ALUControl,
+					  input logic [1:0] ImmSrc, RegSrc,
+					  input logic [2:0] ALUControl,
 					  input logic [31:0] Instr, ReadData, 
 					  output logic [3:0] ALUFlags,
 					  output logic [31:0] ALUResult, WriteData,
