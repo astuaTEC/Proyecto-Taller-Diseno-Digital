@@ -1,11 +1,11 @@
 module Chipset(input logic [31:0] Addr,
-					input logic MemWrite
+					input logic MemWrite,
 					output logic EnRAM, EnReg, S);
 					
 	always_comb begin
-		case(Addr) inside
+		case(Addr) 
 			// Direcciones de RAM 0-0xFFFF
-			: begin
+			32'h0, 32'hffff: begin
 				EnReg = MemWrite;
 				EnRAM = 0;
 				S = 0;
