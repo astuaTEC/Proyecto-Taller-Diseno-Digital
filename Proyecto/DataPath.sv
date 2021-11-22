@@ -6,14 +6,14 @@ module DataPath (input logic clk, rst, MemtoReg, ALUSrc, MemWrite, RegWrite, PCS
 					  input logic [31:0] Instr, ReadData, 
 					  output logic [3:0] ALUFlags,
 					  output logic [31:0] ALUResult, WriteData,
-					  output logic [15:0] PC);
+					  output logic [15:0] PC1);
 
 	// Conexiones internas
 	logic [31:0] Result, RD1, RD2, ExtImm, SrcB, PCPlus8E;
 	logic [3:0] RA1, RA2, ALUInternOp;
 	
 	//Conexiones memoria de instrucciones
-	logic [15:0] PCPlus4, PC1, PCPlus8;
+	logic [15:0] PCPlus4, PC, PCPlus8;
 	
 	//Parte relacionada al PC
 	Mux_2_to_1 #(16) PCSrcMux(PCSrc, PCPlus4, Result[15:0], PC1);

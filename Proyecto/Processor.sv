@@ -11,9 +11,9 @@ module Processor(input logic clk, rst,
   logic [7:0] ReadDataTmp, mwData;
   logic MemWrite, wren;
   
-  InstructionMemory Rom(PC, clk, Instr);
+  romtest Rom(PC, !clk, clk, Instr);
   
-  DataMemoryRam Ram(outAdress, clk, outData, MemWrite | wren, ReadDataTmp);
+  RAM Ram(outAdress, !clk, outData, MemWrite | wren, ReadDataTmp);
   
   CPU cpu(clk, rst, Instr, ReadData, WriteData, ALUResult, MemWrite, PC);
   
