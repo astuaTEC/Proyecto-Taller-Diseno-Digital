@@ -1,20 +1,26 @@
-
-
-module Chipset(input logic MW, input logic [31:0] Addr,
-					output logic writeRam, S);
+module Chipset(input logic [31:0] Addr,
+					input logic MemWrite
+					output logic EnRAM, EnReg, S);
 					
-	always @(*) begin
-	
-		case (MW) 
-			//se necesita leer
-			1'b0: begin
-				writeRam = 1'b0;
+	always_comb begin
+		case(Addr) inside
+			// Direcciones de RAM 0-0xFFFF
+			: begin
+				EnReg = MemWrite;
+				EnRAM = 0;
 				S = 0;
 			end
-			//se necesita escribir
-			1'b1: begin
-				writeRam = 1'b1;
+			// Dirección display 0x10000
+			32'h0001_0000: begin 
+				EnReg = 0;
+				EnRAM = MemWrite;
 				S = 1;
+			end
+			
+			default: begin
+				EnReg = 0;
+				EnRAM = 0;
+				S = 0; // Si se sale del rango se escoge el RAM
 			end
 		endcase
 	end
