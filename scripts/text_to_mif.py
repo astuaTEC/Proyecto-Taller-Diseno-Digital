@@ -1,5 +1,7 @@
+import sys
+
 WIDTH = 8
-DEPTH = 1024
+DEPTH = 65536
 
 # Esta función transforma un string de caracteres ASCII a un archivo .mif donde cada dirección tiene un caracter
 def text_to_mif( text: str):
@@ -9,7 +11,7 @@ def text_to_mif( text: str):
         file.write("ADDRESS_RADIX=UNS;\n")
         file.write("DATA_RADIX=HEX;\n\n")
 
-        address = 0;
+        address = 2;
         file.write("CONTENT BEGIN\n")
         for char in text:
             if(address < DEPTH):
@@ -24,5 +26,10 @@ def text_to_mif( text: str):
         file.write("END;")
         return
 
-
-text_to_mif("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit blandit est eget ornare. Nunc porta ante quis ante aliquet, eu tempor velit aliquam. Pellentesque posuere pharetra aliquam. Proin quis nulla at dui porta congue. Pellentesque sit amet maximus neque, et blandit diam. Donec non mi nec nibh dignissim rutrum. Vestibulum pretium lorem libero, ac tempor ex porttitor in. Nullam lacinia sagittis quam nec viverra. Nulla facilisi. Sed nec dictum sem. Pellentesque ullamcorper nisi nibh, id iaculis eros cursus vitae. ")
+if (__name__ == "__main__"):
+    text = ""
+    if(len(sys.argv) > 1):
+        text = sys.argv[1]
+        text_to_mif("Lorem" + text)
+    else:
+        text_to_mif("Lorem" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem Cras hendrerit blandit est eget Lorem ornare.Lorem Nunc porta ante quis ante aliquet, eu tempor velit aliquam. Lorem Pellentesque posuere pharetra aliquam. Proin quis nulla at dui porta congue. Pellentesque sit amet maximus neque, et blandit diam. Donec non mi nec nibh dignissim rutrum. Vestibulum pretium lorem libero, ac tempor ex porttitor in. Nullam lacinia sagittis quam nec viverra. Nulla facilisi. Sed nec dictum sem. Pellentesque ullamcorper nisi nibh, id iaculis eros cursus Lorem vitae Lorem. ")
