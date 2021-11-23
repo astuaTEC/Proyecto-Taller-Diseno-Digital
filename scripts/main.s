@@ -62,5 +62,5 @@ sumarLoop1:
 	B loop1
 	
 DONE:
-	MOV R1, #520
-	STR R7, [R1]
+	MOV R1, #0
+	STR R7, [R1, #520]
