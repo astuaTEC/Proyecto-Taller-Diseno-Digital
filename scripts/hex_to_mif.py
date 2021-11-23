@@ -3,7 +3,7 @@
 import sys
 
 WIDTH = 32
-DEPTH = 1024
+DEPTH = 65536
 
 # Esta función toma un archivo con código máquina en hexadecimal donde cada línea representa 32 bits y genera un archivo .mif donde cada dirección tiene una instrucción
 def hex_to_mif(args):
@@ -25,7 +25,7 @@ def hex_to_mif(args):
                     line = line.replace('\n','')
                     if(address < DEPTH):
                         writefile.write("\t{0}\t:   {1:0{2}X};\n".format(address, int(line,16), WIDTH//4))
-                        address += 1
+                        address += 4
                     else:
                         break
 
