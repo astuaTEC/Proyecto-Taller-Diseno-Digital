@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Proyecto
-Mon Nov 22 10:18:58 2021
+Mon Nov 22 18:43:03 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -81,7 +81,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Nov 22 10:18:58 2021       ;
+; Analysis & Elaboration Status ; Successful - Mon Nov 22 18:43:03 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Proyecto                                    ;
 ; Top-level Entity Name         ; processor_tb                                ;
@@ -754,7 +754,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 22 10:18:48 2021
+    Info: Processing started: Mon Nov 22 18:42:53 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto -c Proyecto --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -822,6 +822,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram.v
     Info (12023): Found entity 1: RAM File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RAM.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file romtest.v
     Info (12023): Found entity 1: romtest File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/romtest.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ram_tb.sv
+    Info (12023): Found entity 1: ram_tb File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ram_tb.sv Line: 2
 Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(28): created implicit net for "o1" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 28
 Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(29): created implicit net for "o2" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 29
 Warning (10236): Verilog HDL Implicit Net warning at ALU.sv(30): created implicit net for "o3" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv Line: 30
@@ -909,8 +911,8 @@ Info (10264): Verilog HDL Case Statement information at writeMem.sv(12): all cas
 Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "Processor:procesor|Mux_2_to_1:muxDataRam" File: C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Processor.sv Line: 26
 Info (144001): Generated suppressed messages file C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/output_files/Proyecto.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Mon Nov 22 10:18:58 2021
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Mon Nov 22 18:43:03 2021
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 
