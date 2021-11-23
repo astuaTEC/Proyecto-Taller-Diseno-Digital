@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1637628194
+Z2 !s110 1637698878
 !i10b 1
 !s100 4?6z]XCnP_=G52W;?@AFE1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1637451479
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv
-!i122 10
+!i122 12
 L0 14 43
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1637628194.000000
+Z6 !s108 1637698878.000000
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALU.sv|
 !i113 1
@@ -38,7 +38,7 @@ Z9 tCvgOpt 0
 n@a@l@u
 vALUControlDeco
 R1
-Z10 !s110 1637628195
+Z10 !s110 1637698879
 !i10b 1
 !s100 ]BlS7i]X?_d>RnnQ0z_zI2
 R3
@@ -49,13 +49,13 @@ R0
 w1637451184
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv
-!i122 17
+!i122 19
 L0 3 15
 R5
 r1
 !s85 0
 31
-Z11 !s108 1637628195.000000
+Z11 !s108 1637698879.000000
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUControlDeco.sv|
 !i113 1
@@ -76,7 +76,7 @@ R0
 w1637456497
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ALUDecoder.sv
-!i122 13
+!i122 15
 L0 3 35
 R5
 r1
@@ -90,9 +90,62 @@ R7
 R8
 R9
 n@a@l@u@decoder
+vbin2bcd
+R1
+Z12 !s110 1637698877
+!i10b 1
+!s100 kzIb8eS0TnZ^YCFQSL[Kh1
+R3
+IGYTA=e95zd[=>>UHD6;7f1
+R4
+S1
+R0
+w1630599571
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/bin2bcd.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/bin2bcd.sv
+!i122 3
+L0 3 33
+R5
+r1
+!s85 0
+31
+Z13 !s108 1637698877.000000
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/bin2bcd.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/bin2bcd.sv|
+!i113 1
+R7
+R8
+R9
+vChipset
+R1
+R10
+!i10b 1
+!s100 VSUod8]j5bRlBUg2NHj=c3
+R3
+Ih<>9;:aU;ff?eIYJ31j393
+R4
+S1
+R0
+w1637698858
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Chipset.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Chipset.sv
+!i122 24
+L0 1 28
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Chipset.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Chipset.sv|
+!i113 1
+R7
+R8
+R9
+n@chipset
 vConditionalLogic
 R1
-R2
+R10
 !i10b 1
 !s100 0]m34THAU@Kd6;zJV]MMX0
 R3
@@ -103,7 +156,7 @@ R0
 w1635960620
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ConditionalLogic.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ConditionalLogic.sv
-!i122 14
+!i122 16
 L0 3 42
 R5
 r1
@@ -119,7 +172,7 @@ R9
 n@conditional@logic
 vControlUnit
 R1
-R2
+R10
 !i10b 1
 !s100 c?DiL6nYTV][K7U7kO>Pg2
 R3
@@ -130,13 +183,13 @@ R0
 w1637451302
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv
-!i122 16
+!i122 18
 L0 6 20
 R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/ControlUnit.sv|
 !i113 1
@@ -157,7 +210,7 @@ R0
 w1637452360
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/CPU.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/CPU.sv
-!i122 19
+!i122 21
 L0 3 21
 R5
 r1
@@ -184,7 +237,7 @@ R0
 w1637551167
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/DataPath.sv
-!i122 18
+!i122 20
 L0 3 50
 R5
 r1
@@ -200,7 +253,7 @@ R9
 n@data@path
 vDecoder
 R1
-R2
+R10
 !i10b 1
 !s100 5NS3ZJ;[aa7KY<^^cPTa62
 R3
@@ -211,13 +264,13 @@ R0
 w1637457474
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv
-!i122 15
+!i122 17
 L0 6 18
 R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Decoder.sv|
 !i113 1
@@ -227,7 +280,7 @@ R9
 n@decoder
 vDemux_1_to_16
 R1
-Z12 !s110 1637628193
+R12
 !i10b 1
 !s100 B3`6^AkKl`]kS1MOCB[oz2
 R3
@@ -238,13 +291,13 @@ R0
 w1635477823
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv
-!i122 3
+!i122 5
 L0 3 31
 R5
 r1
 !s85 0
 31
-Z13 !s108 1637628193.000000
+R13
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv|
 !i113 1
@@ -265,7 +318,7 @@ R0
 w1636506052
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Extend.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Extend.sv
-!i122 2
+!i122 4
 L0 1 15
 R5
 r1
@@ -292,7 +345,7 @@ R0
 w1636557763
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/MainDecoder.sv
-!i122 11
+!i122 13
 L0 7 41
 R5
 r1
@@ -308,7 +361,7 @@ R9
 n@main@decoder
 vMux_16_to_1
 R1
-R12
+R2
 !i10b 1
 !s100 UVZWV@0iSzg4Wghfg:YGI0
 R3
@@ -319,13 +372,13 @@ R0
 w1635477817
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_16_to_1.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_16_to_1.sv
-!i122 6
+!i122 8
 L0 5 30
 R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_16_to_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_16_to_1.sv|
 !i113 1
@@ -335,7 +388,7 @@ R9
 n@mux_16_to_1
 vMux_2_to_1
 R1
-R12
+R2
 !i10b 1
 !s100 5No_;>SModM1WQ_W3fhFY3
 R3
@@ -346,7 +399,7 @@ R0
 w1635475592
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_2_to_1.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Mux_2_to_1.sv
-!i122 5
+!i122 7
 L0 5 6
 R5
 r1
@@ -362,7 +415,7 @@ R9
 n@mux_2_to_1
 vPC
 R1
-R12
+R2
 !i10b 1
 !s100 ]3W=fkb]1BRi1k6Q=d2HN0
 R3
@@ -373,13 +426,13 @@ R0
 w1637541040
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC.sv
-!i122 7
+!i122 9
 Z14 L0 6 10
 R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC.sv|
 !i113 1
@@ -400,7 +453,7 @@ R0
 w1635956555
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC_Logic.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/PC_Logic.sv
-!i122 12
+!i122 14
 L0 6 7
 R5
 r1
@@ -427,13 +480,13 @@ R0
 w1637298905
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv
-!i122 8
+!i122 10
 L0 6 6
 R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Plus4.sv|
 !i113 1
@@ -445,17 +498,17 @@ vProcessor
 R1
 R10
 !i10b 1
-!s100 17J1cDBNC`F3Y?4I=PeWm1
+!s100 bdjbDkES3ZIEeo<HShKg:0
 R3
-I8<QZ1ZV_^3_Xn0]dC`3]Y2
+Ij_:e8D4K9>UbY_8YTci6h1
 R4
 S1
 R0
-w1637556837
+w1637698154
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Processor.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Processor.sv
-!i122 20
-L0 3 30
+!i122 22
+L0 3 44
 R5
 r1
 !s85 0
@@ -472,17 +525,17 @@ vprocessor_tb
 R1
 R10
 !i10b 1
-!s100 4X_i<RX==C;77<A6ZG`5a0
+!s100 5ZeK`EighZ^FT4Z>ZgN[?2
 R3
-I3^SPgb1H<VE6@TnOWD_ce2
+IT;a:_;^fSb6HSkHXIM9=V2
 R4
 S1
 R0
-w1637556121
+w1637698551
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/processor_tb.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/processor_tb.sv
-!i122 22
-L0 2 41
+!i122 25
+L0 2 52
 R5
 r1
 !s85 0
@@ -495,7 +548,7 @@ R7
 R8
 R9
 vRAM
-!s110 1637628192
+!s110 1637698876
 !i10b 1
 !s100 e?Hi:B0T5GJUX9YJE5f1:3
 R3
@@ -511,7 +564,7 @@ R5
 r1
 !s85 0
 31
-!s108 1637628192.000000
+!s108 1637698876.000000
 !s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RAM.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RAM.v|
 !i113 1
@@ -532,7 +585,7 @@ R0
 w1637597652
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv
-!i122 4
+!i122 6
 R14
 R5
 r1
@@ -559,7 +612,7 @@ R0
 w1637551496
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RegisterFile.sv
-!i122 9
+!i122 11
 L0 3 49
 R5
 r1
@@ -597,6 +650,32 @@ R13
 R15
 R16
 R9
+vsegment7_deco
+R1
+R12
+!i10b 1
+!s100 [=I03KM>ZHc3G`_;nH27Z1
+R3
+I<oHl7nQRB5lEUTYA=ND>I0
+R4
+S1
+R0
+w1630598255
+8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/segment7_deco.sv
+FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/segment7_deco.sv
+!i122 2
+L0 3 30
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/segment7_deco.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto|C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/segment7_deco.sv|
+!i113 1
+R7
+R8
+R9
 vwriteMem
 R1
 R10
@@ -610,7 +689,7 @@ R0
 w1636848613
 8C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/writeMem.sv
 FC:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/writeMem.sv
-!i122 21
+!i122 23
 L0 6 39
 R5
 r1

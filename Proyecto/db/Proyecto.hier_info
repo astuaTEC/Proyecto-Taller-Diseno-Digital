@@ -1,9 +1,6 @@
-|processor_tb
-
-
-|processor_tb|Processor:procesor
-clk => clk.IN2
-rst => rst.IN1
+|Processor
+clk => clk.IN3
+rst => rst.IN2
 bytePos[0] => bytePos[0].IN1
 bytePos[1] => bytePos[1].IN1
 bytePos[2] => bytePos[2].IN1
@@ -15,49 +12,23 @@ bytePos[7] => bytePos[7].IN1
 btn[0] => btn[0].IN1
 btn[1] => btn[1].IN1
 btn[2] => btn[2].IN1
-WriteData[0] <= WriteData[0].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[1] <= WriteData[1].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[2] <= WriteData[2].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[3] <= WriteData[3].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[4] <= WriteData[4].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[5] <= WriteData[5].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[6] <= WriteData[6].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[7] <= WriteData[7].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[8] <= CPU:cpu.port4
-WriteData[9] <= CPU:cpu.port4
-WriteData[10] <= CPU:cpu.port4
-WriteData[11] <= CPU:cpu.port4
-WriteData[12] <= CPU:cpu.port4
-WriteData[13] <= CPU:cpu.port4
-WriteData[14] <= CPU:cpu.port4
-WriteData[15] <= CPU:cpu.port4
-WriteData[16] <= CPU:cpu.port4
-WriteData[17] <= CPU:cpu.port4
-WriteData[18] <= CPU:cpu.port4
-WriteData[19] <= CPU:cpu.port4
-WriteData[20] <= CPU:cpu.port4
-WriteData[21] <= CPU:cpu.port4
-WriteData[22] <= CPU:cpu.port4
-WriteData[23] <= CPU:cpu.port4
-WriteData[24] <= CPU:cpu.port4
-WriteData[25] <= CPU:cpu.port4
-WriteData[26] <= CPU:cpu.port4
-WriteData[27] <= CPU:cpu.port4
-WriteData[28] <= CPU:cpu.port4
-WriteData[29] <= CPU:cpu.port4
-WriteData[30] <= CPU:cpu.port4
-WriteData[31] <= CPU:cpu.port4
-outData[0] <= outData[0].DB_MAX_OUTPUT_PORT_TYPE
-outData[1] <= outData[1].DB_MAX_OUTPUT_PORT_TYPE
-outData[2] <= outData[2].DB_MAX_OUTPUT_PORT_TYPE
-outData[3] <= outData[3].DB_MAX_OUTPUT_PORT_TYPE
-outData[4] <= outData[4].DB_MAX_OUTPUT_PORT_TYPE
-outData[5] <= outData[5].DB_MAX_OUTPUT_PORT_TYPE
-outData[6] <= outData[6].DB_MAX_OUTPUT_PORT_TYPE
-outData[7] <= outData[7].DB_MAX_OUTPUT_PORT_TYPE
+hex1[0] << segment7_deco:seg1.port1
+hex1[1] << segment7_deco:seg1.port1
+hex1[2] << segment7_deco:seg1.port1
+hex1[3] << segment7_deco:seg1.port1
+hex1[4] << segment7_deco:seg1.port1
+hex1[5] << segment7_deco:seg1.port1
+hex1[6] << segment7_deco:seg1.port1
+hex2[0] << segment7_deco:seg2.port1
+hex2[1] << segment7_deco:seg2.port1
+hex2[2] << segment7_deco:seg2.port1
+hex2[3] << segment7_deco:seg2.port1
+hex2[4] << segment7_deco:seg2.port1
+hex2[5] << segment7_deco:seg2.port1
+hex2[6] << segment7_deco:seg2.port1
 
 
-|processor_tb|Processor:procesor|romtest:Rom
+|Processor|romtest:Rom
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -110,7 +81,7 @@ q[30] <= altsyncram:altsyncram_component.q_a
 q[31] <= altsyncram:altsyncram_component.q_a
 
 
-|processor_tb|Processor:procesor|romtest:Rom|altsyncram:altsyncram_component
+|Processor|romtest:Rom|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -215,7 +186,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|processor_tb|Processor:procesor|romtest:Rom|altsyncram:altsyncram_component|altsyncram_4me1:auto_generated
+|Processor|romtest:Rom|altsyncram:altsyncram_component|altsyncram_4me1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4102,7 +4073,7 @@ q_a[30] <= mux_ahb:mux2.result[30]
 q_a[31] <= mux_ahb:mux2.result[31]
 
 
-|processor_tb|Processor:procesor|romtest:Rom|altsyncram:altsyncram_component|altsyncram_4me1:auto_generated|decode_61a:rden_decode
+|Processor|romtest:Rom|altsyncram:altsyncram_component|altsyncram_4me1:auto_generated|decode_61a:rden_decode
 data[0] => w_anode1046w[1].IN0
 data[0] => w_anode1064w[1].IN1
 data[0] => w_anode1075w[1].IN0
@@ -4137,7 +4108,7 @@ eq[6] <= w_anode1119w[3].DB_MAX_OUTPUT_PORT_TYPE
 eq[7] <= w_anode1130w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|romtest:Rom|altsyncram:altsyncram_component|altsyncram_4me1:auto_generated|mux_ahb:mux2
+|Processor|romtest:Rom|altsyncram:altsyncram_component|altsyncram_4me1:auto_generated|mux_ahb:mux2
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -4876,7 +4847,7 @@ sel[2] => l3_w9_n0_mux_dataout.IN0
 sel[2] => _.IN0
 
 
-|processor_tb|Processor:procesor|RAM:Ram
+|Processor|RAM:Ram
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -4913,7 +4884,7 @@ q[6] <= altsyncram:altsyncram_component.q_a
 q[7] <= altsyncram:altsyncram_component.q_a
 
 
-|processor_tb|Processor:procesor|RAM:Ram|altsyncram:altsyncram_component
+|Processor|RAM:Ram|altsyncram:altsyncram_component
 wren_a => altsyncram_lun1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -4970,7 +4941,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|processor_tb|Processor:procesor|RAM:Ram|altsyncram:altsyncram_component|altsyncram_lun1:auto_generated
+|Processor|RAM:Ram|altsyncram:altsyncram_component|altsyncram_lun1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -5957,7 +5928,7 @@ q_a[7] <= mux_tfb:mux2.result[7]
 wren_a => decode_dla:decode3.enable
 
 
-|processor_tb|Processor:procesor|RAM:Ram|altsyncram:altsyncram_component|altsyncram_lun1:auto_generated|decode_dla:decode3
+|Processor|RAM:Ram|altsyncram:altsyncram_component|altsyncram_lun1:auto_generated|decode_dla:decode3
 data[0] => w_anode431w[1].IN0
 data[0] => w_anode448w[1].IN1
 data[0] => w_anode458w[1].IN0
@@ -6000,7 +5971,7 @@ eq[6] <= w_anode498w[3].DB_MAX_OUTPUT_PORT_TYPE
 eq[7] <= w_anode508w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|RAM:Ram|altsyncram:altsyncram_component|altsyncram_lun1:auto_generated|decode_61a:rden_decode
+|Processor|RAM:Ram|altsyncram:altsyncram_component|altsyncram_lun1:auto_generated|decode_61a:rden_decode
 data[0] => w_anode1046w[1].IN0
 data[0] => w_anode1064w[1].IN1
 data[0] => w_anode1075w[1].IN0
@@ -6035,7 +6006,7 @@ eq[6] <= w_anode1119w[3].DB_MAX_OUTPUT_PORT_TYPE
 eq[7] <= w_anode1130w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|RAM:Ram|altsyncram:altsyncram_component|altsyncram_lun1:auto_generated|mux_tfb:mux2
+|Processor|RAM:Ram|altsyncram:altsyncram_component|altsyncram_lun1:auto_generated|mux_tfb:mux2
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -6222,7 +6193,7 @@ sel[2] => l3_w7_n0_mux_dataout.IN0
 sel[2] => _.IN0
 
 
-|processor_tb|Processor:procesor|CPU:cpu
+|Processor|CPU:cpu
 clk => clk.IN2
 rst => rst.IN2
 Instr[0] => Instr[0].IN1
@@ -6372,7 +6343,7 @@ PC[14] <= DataPath:DP.port15
 PC[15] <= DataPath:DP.port15
 
 
-|processor_tb|Processor:procesor|CPU:cpu|ControlUnit:CU
+|Processor|CPU:cpu|ControlUnit:CU
 clk => clk.IN1
 rst => rst.IN1
 Rd[0] => Rd[0].IN1
@@ -6409,7 +6380,7 @@ ALUControl[1] <= Decoder:CUDecoder.port12
 ALUControl[2] <= Decoder:CUDecoder.port12
 
 
-|processor_tb|Processor:procesor|CPU:cpu|ControlUnit:CU|Decoder:CUDecoder
+|Processor|CPU:cpu|ControlUnit:CU|Decoder:CUDecoder
 Rd[0] => Rd[0].IN1
 Rd[1] => Rd[1].IN1
 Rd[2] => Rd[2].IN1
@@ -6439,7 +6410,7 @@ ALUControl[1] <= ALUDecoder:ALUDeco.port4
 ALUControl[2] <= ALUDecoder:ALUDeco.port4
 
 
-|processor_tb|Processor:procesor|CPU:cpu|ControlUnit:CU|Decoder:CUDecoder|MainDecoder:MainDeco
+|Processor|CPU:cpu|ControlUnit:CU|Decoder:CUDecoder|MainDecoder:MainDeco
 Op[0] => controls.OUTPUTSELECT
 Op[0] => Mux0.IN4
 Op[0] => Mux1.IN4
@@ -6468,7 +6439,7 @@ RegSrc[0] <= Op[1].DB_MAX_OUTPUT_PORT_TYPE
 RegSrc[1] <= Op[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|ControlUnit:CU|Decoder:CUDecoder|ALUDecoder:ALUDeco
+|Processor|CPU:cpu|ControlUnit:CU|Decoder:CUDecoder|ALUDecoder:ALUDeco
 ALUOp => ALUControl.OUTPUTSELECT
 ALUOp => ALUControl.OUTPUTSELECT
 ALUOp => ALUControl.OUTPUTSELECT
@@ -6499,7 +6470,7 @@ ALUControl[1] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[2] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|ControlUnit:CU|Decoder:CUDecoder|PC_Logic:PcLogic
+|Processor|CPU:cpu|ControlUnit:CU|Decoder:CUDecoder|PC_Logic:PcLogic
 Rd[0] => Equal0.IN3
 Rd[1] => Equal0.IN2
 Rd[2] => Equal0.IN1
@@ -6509,7 +6480,7 @@ RegW => PCS.IN1
 PCS <= PCS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|ControlUnit:CU|ConditionalLogic:CLogic
+|Processor|CPU:cpu|ControlUnit:CU|ConditionalLogic:CLogic
 clk => clk.IN2
 rst => rst.IN2
 PCS => PCSrc.IN1
@@ -6531,7 +6502,7 @@ RegWrite <= RegWrite.DB_MAX_OUTPUT_PORT_TYPE
 MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|ControlUnit:CU|ConditionalLogic:CLogic|Register:R1
+|Processor|CPU:cpu|ControlUnit:CU|ConditionalLogic:CLogic|Register:R1
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 rst => Q[0]~reg0.ACLR
@@ -6544,7 +6515,7 @@ Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|ControlUnit:CU|ConditionalLogic:CLogic|Register:R2
+|Processor|CPU:cpu|ControlUnit:CU|ConditionalLogic:CLogic|Register:R2
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 rst => Q[0]~reg0.ACLR
@@ -6557,7 +6528,7 @@ Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP
+|Processor|CPU:cpu|DataPath:DP
 clk => clk.IN2
 rst => rst.IN2
 MemtoReg => MemtoReg.IN1
@@ -6722,7 +6693,7 @@ PC1[14] <= PC1[14].DB_MAX_OUTPUT_PORT_TYPE
 PC1[15] <= PC1[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|Mux_2_to_1:PCSrcMux
+|Processor|CPU:cpu|DataPath:DP|Mux_2_to_1:PCSrcMux
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -6789,7 +6760,7 @@ C[14] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[15] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|PC:PCReg
+|Processor|CPU:cpu|DataPath:DP|PC:PCReg
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -6856,7 +6827,7 @@ Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|Plus4:PCAdder1
+|Processor|CPU:cpu|DataPath:DP|Plus4:PCAdder1
 in[0] => out[0].DATAIN
 in[1] => out[1].DATAIN
 in[2] => Add0.IN28
@@ -6891,7 +6862,7 @@ out[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|Plus4:PCAdder2
+|Processor|CPU:cpu|DataPath:DP|Plus4:PCAdder2
 in[0] => out[0].DATAIN
 in[1] => out[1].DATAIN
 in[2] => Add0.IN28
@@ -6926,7 +6897,7 @@ out[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|Mux_2_to_1:ra1mux
+|Processor|CPU:cpu|DataPath:DP|Mux_2_to_1:ra1mux
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -6945,7 +6916,7 @@ C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|Mux_2_to_1:ra2mux
+|Processor|CPU:cpu|DataPath:DP|Mux_2_to_1:ra2mux
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -6964,7 +6935,7 @@ C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile
 clk => clk.IN15
 rst => rst.IN16
 WE3 => WE3.IN1
@@ -7110,7 +7081,7 @@ RD2[30] <= Mux_16_to_1:MUX_RD2.port17
 RD2[31] <= Mux_16_to_1:MUX_RD2.port17
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Demux_1_to_16:DEMUX
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Demux_1_to_16:DEMUX
 IN => out.DATAB
 IN => out.DATAB
 IN => out.DATAB
@@ -7149,7 +7120,7 @@ OUT[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 OUT[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG00
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG00
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -7312,7 +7283,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG01
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG01
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -7475,7 +7446,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG02
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG02
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -7638,7 +7609,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG03
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG03
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -7801,7 +7772,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG04
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG04
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -7964,7 +7935,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG05
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG05
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -8127,7 +8098,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG06
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG06
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -8290,7 +8261,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG07
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG07
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -8453,7 +8424,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG08
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG08
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -8616,7 +8587,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG09
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG09
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -8779,7 +8750,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG10
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG10
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -8942,7 +8913,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG11
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG11
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -9105,7 +9076,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG12
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG12
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -9268,7 +9239,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG13
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG13
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -9431,7 +9402,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG14
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG14
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -9594,7 +9565,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG15
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Register:REG15
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -9757,7 +9728,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Mux_16_to_1:MUX_RD1
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Mux_16_to_1:MUX_RD1
 S[0] => Mux0.IN3
 S[0] => Mux1.IN3
 S[0] => Mux2.IN3
@@ -10432,7 +10403,7 @@ out[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Mux_16_to_1:MUX_RD2
+|Processor|CPU:cpu|DataPath:DP|RegisterFile:RegFile|Mux_16_to_1:MUX_RD2
 S[0] => Mux0.IN3
 S[0] => Mux1.IN3
 S[0] => Mux2.IN3
@@ -11107,7 +11078,7 @@ out[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|Extend:Ext
+|Processor|CPU:cpu|DataPath:DP|Extend:Ext
 x[0] => ExtImm.DATAB
 x[0] => ExtImm.DATAA
 x[1] => ExtImm.DATAB
@@ -11220,7 +11191,7 @@ ExtImm[30] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
 ExtImm[31] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|Mux_2_to_1:SrcBMux
+|Processor|CPU:cpu|DataPath:DP|Mux_2_to_1:SrcBMux
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -11351,7 +11322,7 @@ C[30] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|ALUControlDeco:AluDeco
+|Processor|CPU:cpu|DataPath:DP|ALUControlDeco:AluDeco
 ALUControl[0] => Decoder1.IN2
 ALUControl[1] => Decoder0.IN1
 ALUControl[1] => Decoder1.IN1
@@ -11363,7 +11334,7 @@ ALUOp[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 ALUOp[3] <= <GND>
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|ALU:Alu
+|Processor|CPU:cpu|DataPath:DP|ALU:Alu
 a[0] => lres.IN0
 a[0] => lres.IN0
 a[0] => lres.IN0
@@ -11838,7 +11809,7 @@ flags[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 flags[3] <= res.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|CPU:cpu|DataPath:DP|Mux_2_to_1:MemtoRegMux
+|Processor|CPU:cpu|DataPath:DP|Mux_2_to_1:MemtoRegMux
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -11969,7 +11940,7 @@ C[30] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|writeMem:wm
+|Processor|writeMem:wm
 bytePos[0] => Mux1.IN7
 bytePos[1] => Mux0.IN7
 bytePos[2] => data.DATAB
@@ -12014,7 +11985,7 @@ data[6] <= data.DB_MAX_OUTPUT_PORT_TYPE
 data[7] <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|Mux_2_to_1:muxAdressRam
+|Processor|Mux_2_to_1:muxAdressRam
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -12081,7 +12052,7 @@ C[14] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[15] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor_tb|Processor:procesor|Mux_2_to_1:muxDataRam
+|Processor|Mux_2_to_1:muxDataRam
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
 sel => C.OUTPUTSELECT
@@ -12114,5 +12085,337 @@ C[4] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[5] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[6] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[7] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Processor|Chipset:chipset
+Addr[0] => Equal0.IN63
+Addr[0] => Equal1.IN63
+Addr[0] => Equal2.IN63
+Addr[1] => Equal0.IN62
+Addr[1] => Equal1.IN62
+Addr[1] => Equal2.IN62
+Addr[2] => Equal0.IN61
+Addr[2] => Equal1.IN61
+Addr[2] => Equal2.IN61
+Addr[3] => Equal0.IN60
+Addr[3] => Equal1.IN60
+Addr[3] => Equal2.IN60
+Addr[4] => Equal0.IN59
+Addr[4] => Equal1.IN59
+Addr[4] => Equal2.IN59
+Addr[5] => Equal0.IN58
+Addr[5] => Equal1.IN58
+Addr[5] => Equal2.IN58
+Addr[6] => Equal0.IN57
+Addr[6] => Equal1.IN57
+Addr[6] => Equal2.IN57
+Addr[7] => Equal0.IN56
+Addr[7] => Equal1.IN56
+Addr[7] => Equal2.IN56
+Addr[8] => Equal0.IN55
+Addr[8] => Equal1.IN55
+Addr[8] => Equal2.IN55
+Addr[9] => Equal0.IN54
+Addr[9] => Equal1.IN54
+Addr[9] => Equal2.IN54
+Addr[10] => Equal0.IN53
+Addr[10] => Equal1.IN53
+Addr[10] => Equal2.IN53
+Addr[11] => Equal0.IN52
+Addr[11] => Equal1.IN52
+Addr[11] => Equal2.IN52
+Addr[12] => Equal0.IN51
+Addr[12] => Equal1.IN51
+Addr[12] => Equal2.IN51
+Addr[13] => Equal0.IN50
+Addr[13] => Equal1.IN50
+Addr[13] => Equal2.IN50
+Addr[14] => Equal0.IN49
+Addr[14] => Equal1.IN49
+Addr[14] => Equal2.IN49
+Addr[15] => Equal0.IN48
+Addr[15] => Equal1.IN48
+Addr[15] => Equal2.IN48
+Addr[16] => Equal0.IN47
+Addr[16] => Equal1.IN47
+Addr[16] => Equal2.IN47
+Addr[17] => Equal0.IN46
+Addr[17] => Equal1.IN46
+Addr[17] => Equal2.IN46
+Addr[18] => Equal0.IN45
+Addr[18] => Equal1.IN45
+Addr[18] => Equal2.IN45
+Addr[19] => Equal0.IN44
+Addr[19] => Equal1.IN44
+Addr[19] => Equal2.IN44
+Addr[20] => Equal0.IN43
+Addr[20] => Equal1.IN43
+Addr[20] => Equal2.IN43
+Addr[21] => Equal0.IN42
+Addr[21] => Equal1.IN42
+Addr[21] => Equal2.IN42
+Addr[22] => Equal0.IN41
+Addr[22] => Equal1.IN41
+Addr[22] => Equal2.IN41
+Addr[23] => Equal0.IN40
+Addr[23] => Equal1.IN40
+Addr[23] => Equal2.IN40
+Addr[24] => Equal0.IN39
+Addr[24] => Equal1.IN39
+Addr[24] => Equal2.IN39
+Addr[25] => Equal0.IN38
+Addr[25] => Equal1.IN38
+Addr[25] => Equal2.IN38
+Addr[26] => Equal0.IN37
+Addr[26] => Equal1.IN37
+Addr[26] => Equal2.IN37
+Addr[27] => Equal0.IN36
+Addr[27] => Equal1.IN36
+Addr[27] => Equal2.IN36
+Addr[28] => Equal0.IN35
+Addr[28] => Equal1.IN35
+Addr[28] => Equal2.IN35
+Addr[29] => Equal0.IN34
+Addr[29] => Equal1.IN34
+Addr[29] => Equal2.IN34
+Addr[30] => Equal0.IN33
+Addr[30] => Equal1.IN33
+Addr[30] => Equal2.IN33
+Addr[31] => Equal0.IN32
+Addr[31] => Equal1.IN32
+Addr[31] => Equal2.IN32
+MemWrite => EnReg.DATAB
+MemWrite => EnRAM.DATAB
+EnRAM <= EnRAM.DB_MAX_OUTPUT_PORT_TYPE
+EnReg <= EnReg.DB_MAX_OUTPUT_PORT_TYPE
+S <= EnRAM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Processor|Register:displayRegister
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+clk => Q[8]~reg0.CLK
+clk => Q[9]~reg0.CLK
+clk => Q[10]~reg0.CLK
+clk => Q[11]~reg0.CLK
+clk => Q[12]~reg0.CLK
+clk => Q[13]~reg0.CLK
+clk => Q[14]~reg0.CLK
+clk => Q[15]~reg0.CLK
+clk => Q[16]~reg0.CLK
+clk => Q[17]~reg0.CLK
+clk => Q[18]~reg0.CLK
+clk => Q[19]~reg0.CLK
+clk => Q[20]~reg0.CLK
+clk => Q[21]~reg0.CLK
+clk => Q[22]~reg0.CLK
+clk => Q[23]~reg0.CLK
+clk => Q[24]~reg0.CLK
+clk => Q[25]~reg0.CLK
+clk => Q[26]~reg0.CLK
+clk => Q[27]~reg0.CLK
+clk => Q[28]~reg0.CLK
+clk => Q[29]~reg0.CLK
+clk => Q[30]~reg0.CLK
+clk => Q[31]~reg0.CLK
+rst => Q[0]~reg0.ACLR
+rst => Q[1]~reg0.ACLR
+rst => Q[2]~reg0.ACLR
+rst => Q[3]~reg0.ACLR
+rst => Q[4]~reg0.ACLR
+rst => Q[5]~reg0.ACLR
+rst => Q[6]~reg0.ACLR
+rst => Q[7]~reg0.ACLR
+rst => Q[8]~reg0.ACLR
+rst => Q[9]~reg0.ACLR
+rst => Q[10]~reg0.ACLR
+rst => Q[11]~reg0.ACLR
+rst => Q[12]~reg0.ACLR
+rst => Q[13]~reg0.ACLR
+rst => Q[14]~reg0.ACLR
+rst => Q[15]~reg0.ACLR
+rst => Q[16]~reg0.ACLR
+rst => Q[17]~reg0.ACLR
+rst => Q[18]~reg0.ACLR
+rst => Q[19]~reg0.ACLR
+rst => Q[20]~reg0.ACLR
+rst => Q[21]~reg0.ACLR
+rst => Q[22]~reg0.ACLR
+rst => Q[23]~reg0.ACLR
+rst => Q[24]~reg0.ACLR
+rst => Q[25]~reg0.ACLR
+rst => Q[26]~reg0.ACLR
+rst => Q[27]~reg0.ACLR
+rst => Q[28]~reg0.ACLR
+rst => Q[29]~reg0.ACLR
+rst => Q[30]~reg0.ACLR
+rst => Q[31]~reg0.ACLR
+en => Q[0]~reg0.ENA
+en => Q[31]~reg0.ENA
+en => Q[30]~reg0.ENA
+en => Q[29]~reg0.ENA
+en => Q[28]~reg0.ENA
+en => Q[27]~reg0.ENA
+en => Q[26]~reg0.ENA
+en => Q[25]~reg0.ENA
+en => Q[24]~reg0.ENA
+en => Q[23]~reg0.ENA
+en => Q[22]~reg0.ENA
+en => Q[21]~reg0.ENA
+en => Q[20]~reg0.ENA
+en => Q[19]~reg0.ENA
+en => Q[18]~reg0.ENA
+en => Q[17]~reg0.ENA
+en => Q[16]~reg0.ENA
+en => Q[15]~reg0.ENA
+en => Q[14]~reg0.ENA
+en => Q[13]~reg0.ENA
+en => Q[12]~reg0.ENA
+en => Q[11]~reg0.ENA
+en => Q[10]~reg0.ENA
+en => Q[9]~reg0.ENA
+en => Q[8]~reg0.ENA
+en => Q[7]~reg0.ENA
+en => Q[6]~reg0.ENA
+en => Q[5]~reg0.ENA
+en => Q[4]~reg0.ENA
+en => Q[3]~reg0.ENA
+en => Q[2]~reg0.ENA
+en => Q[1]~reg0.ENA
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+D[8] => Q[8]~reg0.DATAIN
+D[9] => Q[9]~reg0.DATAIN
+D[10] => Q[10]~reg0.DATAIN
+D[11] => Q[11]~reg0.DATAIN
+D[12] => Q[12]~reg0.DATAIN
+D[13] => Q[13]~reg0.DATAIN
+D[14] => Q[14]~reg0.DATAIN
+D[15] => Q[15]~reg0.DATAIN
+D[16] => Q[16]~reg0.DATAIN
+D[17] => Q[17]~reg0.DATAIN
+D[18] => Q[18]~reg0.DATAIN
+D[19] => Q[19]~reg0.DATAIN
+D[20] => Q[20]~reg0.DATAIN
+D[21] => Q[21]~reg0.DATAIN
+D[22] => Q[22]~reg0.DATAIN
+D[23] => Q[23]~reg0.DATAIN
+D[24] => Q[24]~reg0.DATAIN
+D[25] => Q[25]~reg0.DATAIN
+D[26] => Q[26]~reg0.DATAIN
+D[27] => Q[27]~reg0.DATAIN
+D[28] => Q[28]~reg0.DATAIN
+D[29] => Q[29]~reg0.DATAIN
+D[30] => Q[30]~reg0.DATAIN
+D[31] => Q[31]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[16] <= Q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[17] <= Q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[18] <= Q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[19] <= Q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[20] <= Q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[21] <= Q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[22] <= Q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[23] <= Q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[24] <= Q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[25] <= Q[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[26] <= Q[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[27] <= Q[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[28] <= Q[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[29] <= Q[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Processor|bin2bcd:bcd_deco
+bin[0] => bcd[0].DATAIN
+bin[1] => LessThan5.IN8
+bin[1] => Add5.IN8
+bin[1] => bcd.DATAA
+bin[2] => LessThan3.IN8
+bin[2] => Add3.IN8
+bin[2] => bcd.DATAA
+bin[3] => LessThan2.IN8
+bin[3] => Add2.IN8
+bin[3] => bcd.DATAA
+bin[4] => LessThan1.IN8
+bin[4] => Add1.IN8
+bin[4] => bcd.DATAA
+bin[5] => LessThan0.IN6
+bin[5] => Add0.IN6
+bin[5] => bcd.DATAA
+bin[6] => LessThan0.IN5
+bin[6] => Add0.IN5
+bin[6] => bcd.DATAA
+bin[7] => LessThan0.IN4
+bin[7] => Add0.IN4
+bin[7] => bcd.DATAA
+bcd[0] <= bin[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[9] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[10] <= <GND>
+bcd[11] <= <GND>
+
+
+|Processor|segment7_deco:seg1
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Processor|segment7_deco:seg2
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

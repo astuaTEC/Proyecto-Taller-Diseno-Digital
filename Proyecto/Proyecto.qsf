@@ -38,8 +38,8 @@
 
 
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY processor_tb
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY Processor
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:10:33  OCTOBER 28, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -89,4 +89,32 @@ set_global_assignment -name SYSTEMVERILOG_FILE ram_tb.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BOARD "DE1-SoC Board"
+set_location_assignment PIN_AE26 -to hex1[6]
+set_location_assignment PIN_AE27 -to hex1[5]
+set_location_assignment PIN_AE28 -to hex1[4]
+set_location_assignment PIN_AG27 -to hex1[3]
+set_location_assignment PIN_AF28 -to hex1[2]
+set_location_assignment PIN_AG28 -to hex1[1]
+set_location_assignment PIN_AH28 -to hex1[0]
+set_location_assignment PIN_AJ29 -to hex2[6]
+set_location_assignment PIN_AH29 -to hex2[5]
+set_location_assignment PIN_AH30 -to hex2[4]
+set_location_assignment PIN_AG30 -to hex2[3]
+set_location_assignment PIN_AF29 -to hex2[2]
+set_location_assignment PIN_AF30 -to hex2[1]
+set_location_assignment PIN_AD27 -to hex2[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_AA14 -to btn[0]
+set_location_assignment PIN_AA15 -to btn[1]
+set_location_assignment PIN_W15 -to btn[2]
+set_location_assignment PIN_AB12 -to bytePos[0]
+set_location_assignment PIN_AC12 -to bytePos[1]
+set_location_assignment PIN_AF9 -to bytePos[2]
+set_location_assignment PIN_AF10 -to bytePos[3]
+set_location_assignment PIN_AD11 -to bytePos[4]
+set_location_assignment PIN_AD12 -to bytePos[5]
+set_location_assignment PIN_AE11 -to bytePos[6]
+set_location_assignment PIN_AC9 -to bytePos[7]
+set_location_assignment PIN_AE12 -to rst
+set_location_assignment PIN_AF14 -to clk

@@ -4,17 +4,17 @@ module Chipset(input logic [31:0] Addr,
 					
 	always_comb begin
 		case(Addr) 
-			// Direcciones de RAM 0-0xFFFF
-			32'h0, 32'hffff: begin
-				EnReg = MemWrite;
-				EnRAM = 0;
-				S = 0;
-			end
-			// Dirección display 0x10000
-			32'h0001_0000: begin 
+			// Direcciones de RAM 0-0x200 (512 decimal)
+			32'h0, 32'h200: begin
 				EnReg = 0;
 				EnRAM = MemWrite;
 				S = 1;
+			end
+			// Dirección display 0x208 (520 decimal)	
+			32'h208: begin 
+				EnReg = MemWrite;
+				EnRAM = 0;
+				S = 0;
 			end
 			
 			default: begin

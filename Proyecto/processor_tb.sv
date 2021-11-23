@@ -6,8 +6,9 @@ module processor_tb();
 	logic [2:0] btn;
 	logic [31:0] WriteData;
 	logic [7:0] outData;
+	logic [6:0] hex1, hex2;
 
-	Processor procesor(clk, rst, bytePos, btn, WriteData, outData);
+	Processor processor(clk, rst, bytePos, btn, hex1, hex2);
 	
 	// generate clock to sequence tests
   always begin
@@ -20,7 +21,17 @@ module processor_tb();
 		btn = 0;
 		#25
 		
+		//se escribe una posicion inicial
+		bytePos = 8'd10;
+		btn = 3'b011;
+		#25
+		
+		//se escoge el algoritmo 1
+		btn = 3'b110;
+		#25
+		
 		rst = 0;
+		btn = 0;
 		/*bytePos = 50;
 		btn = 3'b100;
 		#10

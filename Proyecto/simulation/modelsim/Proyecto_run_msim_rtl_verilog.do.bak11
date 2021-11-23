@@ -7,6 +7,8 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/RAM.v}
 vlog -vlog01compat -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/romtest.v}
+vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/segment7_deco.sv}
+vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/bin2bcd.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Extend.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Demux_1_to_16.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Register.sv}
@@ -27,5 +29,6 @@ vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Dise
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/CPU.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Processor.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/writeMem.sv}
+vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/Chipset.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto {C:/Users/samas/Documents/GitHub/Proyecto-Taller-Diseno-Digital/Proyecto/processor_tb.sv}
 

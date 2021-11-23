@@ -11,14 +11,14 @@ module writeMem(input logic [7:0] bytePos, input logic [2:0] btn,
 	always @(btn) begin
 		case(btn)
 			//algoritmo 1
-			3'b001: begin
+			3'b110: begin
 				//escribe en la pos 0 un 1
 				enable = 1'b1;
 				addr = 16'h0;
 				data = 8'd1;
 			end
 			// algoritmo 2
-			3'b010: begin
+			3'b101: begin
 				//escribe en la pos 0 un 2
 				enable = 1'b1;
 				addr = 16'h0;
@@ -26,7 +26,7 @@ module writeMem(input logic [7:0] bytePos, input logic [2:0] btn,
 			end
 			//escribir la direccion del byte en donde
 			// iniciar el conteo de palabras
-			3'b100: begin
+			3'b011: begin
 				//escribe en la pos 1, la posicion donde empezar el conteo
 				enable = 1'b1;
 				addr = 16'h1;
